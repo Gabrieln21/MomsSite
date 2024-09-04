@@ -9,20 +9,22 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh; 
-  background-color: darkblue; 
+  background-color:   
+ darkblue; 
 }
 
-h1 {  /* Add styles for the h1 heading */
-  font-size: 3em; /* Adjust this value to make the text even bigger or smaller */
-  color: white;   /* Make the text white for better contrast */
+h1 {  
+  font-size: 3em; 
+  color: white;   
 }
 
 button {
   padding: 20px 40px; 
-  font-size: 1.5em; /* Increased font size for the button */
+  font-size: 1.5em; 
   background-color: lightcoral; 
   color: white;                  
   border: none;                 
+  margin: 5px; /* Add some space between the buttons */
 }
 
 img { 
@@ -44,14 +46,18 @@ img {
 </audio>
 
 <button onclick="playAudio()">Play</button>
-
-<script>
+<button onclick="pauseAudio()">Pause</button>   
+ <script>
 var x = document.getElementById("myAudio"); 
 
 function playAudio() { 
   x.play(); 
 } 
+
+function pauseAudio() {
+  x.pause();
+}
 </script>
 
 </body>
-</html
+</html>
