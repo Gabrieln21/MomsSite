@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mom's Art Piece</title>
+</head>
+<body>
+
+<h1>Mom's Art Piece</h1>
+
+<audio id="myAudio">
+  <source src="path/to/your/sound.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<button onclick="playAudio()">Okay, Play Sound</button>
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+</script>
+
+</body>
+</html>
