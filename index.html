@@ -5,15 +5,22 @@
 <style>
 body {
   display: flex;
+  flex-direction: column; /* Arrange content vertically */
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Ensure the body takes up full viewport height */
-  background-color: hotpink;
+  min-height: 100vh; 
+  background-color: hotpink; 
 }
 
 button {
-  padding: 20px 40px; /* Adjust padding for desired size */
-  font-size: 1.2em;   /* Adjust font size as needed */
+  padding: 20px 40px; 
+  font-size: 1.2em; 
+}
+
+img { /* Add styles for the image */
+  max-width: 100%; /* Make sure image doesn't overflow container */
+  height: auto;     /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Add some space below the image */
 }
 </style>
 </head>
@@ -21,8 +28,10 @@ button {
 
 <h1>Mom's Art Piece</h1>
 
+<img src="path/to/your/image.jpg" alt="Description of the image"> 
+
 <audio id="myAudio">
-  <source src="ChinoBeach.mp3" type="audio/mpeg"> 
+  <source src="your/sound.mp3" type="audio/mpeg"> 
   Your browser does not support the audio element.
 </audio>
 
